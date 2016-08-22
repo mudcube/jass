@@ -14,9 +14,9 @@ ${ // A newline after dollar-bracket enters the multiline Javascript context:
 	import 'tinycolor' // You can import libraries using ES6.
 	var color1 = `${'r'}${'e'}${'d'}` // You can use template strings.
 	var color2 = 'hsla(180, 100%, 42%, 1.0)'
-	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // You can use defined SASS variables in your Javascript.
+	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // You can use defined SASS variables inside your Javascript!
 	return `
-		// This returns SASS code & comments to be written inline.
+		// You can optionally return SASS code & comments to be written inline.
 		body 
 			border: 7px solid ${foreground};
 	`
