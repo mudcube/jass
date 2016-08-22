@@ -1,39 +1,39 @@
 # JCSS
-#### Javascript in harmony with SASS/SCSS/CSS
+#### Javascript in harmony with Stylus/SASS/SCSS/CSS
 
 This is currently vaporware... Feel free to pitch in thoughts :)
 
 ## .jcss input
 
 ```js
-// This is SASS; it's the default context of JCSS:
-$background: black
+// This is Stylus; it's the default context of JCSS:
+background = black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
 ${ // A newline after dollar-bracket enters the multiline Javascript context:
-	import 'tinycolor' // You can import libraries using ES6.
-	var color1 = `${'r'}${'e'}${'d'}` // You can use template strings.
-	var color2 = 'hsla(180, 100%, 42%, 1.0)'
-	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // You can use defined SASS variables inside your Javascript!
-	return `
-		// You can optionally return SASS code & comments to be written inline.
-		body 
-			border: 7px solid ${foreground};
-	`
+    import 'tinycolor' // You can perform ES6 imports.
+    var color1 = `${'r'}${'e'}${'d'}` // You can use template strings or any other ES6 feature.
+    var color2 = 'hsla(180, 100%, 42%, 1.0)'
+    var foreground = tinycolor.mostReadable(background, [ color1, color2 ]) // Defined Stylus variables are available for your Javascript to access.
+    return `
+        // This returns SASS code & comments to be written inline.
+        body 
+            border: 7px solid ${foreground};
+    `
 }
 
 body
-	background: $background // This is a SASS variable.
-	color: ${foreground} // This is a Javascript variable.
+    background: background // You can use Stylus variables.
+    color: ${foreground} // You can use Javascript variables.
 ```
 
-### .sass output
+### .styl output
 ```js
-$background: black
+background: black
 
 body 
 	border: 7px solid red;
-	background: $background;
+	background: background;
 	color: red;
 ```
 
