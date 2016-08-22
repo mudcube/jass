@@ -3,29 +3,28 @@
 
 (This is a concept, just tinkering with the idea...)
 
-## .jass syntax
+## .jass input
 
 ```js
-// This is SASS; it's the default context:
+// This is SASS; it's the default context of JASS:
 $background: black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
-${ // An extra newline enters functional Javascript mode, otherwise the value of the code is returned by default.
+${ // An extra newline enters functional Javascript mode, otherwise the value is treated as a variable.
 	import 'tinycolor' // You can import libraries using ES6.
-	var color1 = `${'r'}${'e'}${'d'}` // You can be silly with template strings.
+	var color1 = `${'r'}${'e'}${'d'}` // You can use template strings.
 	var color2 = 'hsla(180, 100%, 42%, 1.0)'
 	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // You can use defined SASS variables in your Javascript.
-	return ` // You can return SASS code & comments to be written inline.
+	return ` // This returns SASS code & comments to be written inline.
 		body {
 			border: 10px solid ${foreground};
 		}
 	`
 }
 
-// JS & SASS in harmony:
 body
-	background: $background // You can use SASS variables.
-	color: ${foreground} // You can use Javascript variables.
+	background: $background // This is a SASS variable.
+	color: ${foreground} // This is a Javascript variable.
 ```
 
 ### .css output
