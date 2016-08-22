@@ -17,7 +17,7 @@ ${ // An extra newline enters functional Javascript mode, otherwise the value is
 	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // You can use defined SASS variables in your Javascript.
 	return ` // This returns SASS code & comments to be written inline.
 		body 
-			border: 10px solid ${foreground};
+			border: 7px solid ${foreground};
 	`
 }
 
@@ -31,7 +31,7 @@ body
 $background: black
 
 body {
-	border: 10px solid red;
+	border: 7px solid red;
 	background: $background;
 	color: red;
 }
@@ -40,7 +40,7 @@ body {
 ### .css output
 ```js
 body {
-	border: 10px solid red;
+	border: 7px solid red;
 	background: black;
 	color: red;
 }
