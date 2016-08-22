@@ -1,0 +1,16 @@
+// this is SASS:
+$bgSelected: '#ff0000'
+
+// this is Javascript, dollar-bracket enters this context at any time:
+${
+	import 'tinycolor'
+    var bg = `${'r'}${'e'}${'d'}` // just being silly, but would work
+    var fg = 'blue'
+}
+
+// JS and SASS combined:
+grid-item
+    background: ${tinycolor.mostReadable('#000', [ bg, fg ])}
+
+    &.selected 
+        background: $bgSelected

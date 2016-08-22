@@ -1,0 +1,9 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35728/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="./parser.js"></script>
+<script>
+fetch('./test.jcss').then((response) => {
+	return response.text()
+}).then((content) => {
+	console.log(jassParse(content))
+})
+</script>
