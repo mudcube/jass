@@ -1,7 +1,7 @@
 # JASS
 #### Javascript in harmony with SASS/SCSS/CSS
 
-(This is a concept, just tinkering with the idea...)
+This is currently vaporware... Feel free to pitch in thoughts :)
 
 ## .jass input
 
@@ -30,11 +30,10 @@ body
 ```js
 $background: black
 
-body {
+body 
 	border: 7px solid red;
 	background: $background;
 	color: red;
-}
 ```
 
 ### .css output
