@@ -14,7 +14,7 @@
 // This is Stylus; it's the default context in a .jstyl:
 background = black
 
-// This is Javascript; dollar-bracket enters the Javascript:
+// This is Javascript; dollar-bracket enters the Javascript context:
 ${
     import 'tinycolor' // You can perform ES6 imports.
     var color1 = `${'r'}${'e'}${'d'}` // You can use template strings or any other ES6 feature.
