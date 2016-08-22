@@ -11,7 +11,7 @@ This is currently vaporware... Feel free to pitch in thoughts :)
 ## .jstyl example
 
 ```js
-// This is Stylus; it's the default context of .jstyl (or use .jass for SASS, or .jcss for SCSS):
+// This is Stylus; it's the default context in a .jstyl:
 background = black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
