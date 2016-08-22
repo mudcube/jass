@@ -6,7 +6,7 @@ This is currently vaporware... Feel free to pitch in thoughts :)
 ## .jcss input
 
 ```js
-// This is Stylus; it's the default context of JCSS:
+// This is Stylus; it's the default context of .jcss (or use .jass for SASS/SCSS support):
 background = black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
