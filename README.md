@@ -1,12 +1,12 @@
-# JASS
+# JCSS
 #### Javascript in harmony with SASS/SCSS/CSS
 
 This is currently vaporware... Feel free to pitch in thoughts :)
 
-## .jass input
+## .jcss input
 
 ```js
-// This is SASS; it's the default context of JASS:
+// This is SASS; it's the default context of JCSS:
 $background: black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
