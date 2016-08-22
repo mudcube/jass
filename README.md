@@ -14,12 +14,12 @@
 // This is Stylus; it's the default context in a .jstyl:
 background = black
 
-// This is Javascript; dollar-bracket enters the Javascript context at any time:
+// This is Javascript; dollar-bracket enters the Javascript:
 ${
     import 'tinycolor' // You can perform ES6 imports.
     var color1 = `${'r'}${'e'}${'d'}` // You can use template strings or any other ES6 feature.
     var color2 = 'hsla(180, 100%, 42%, 1.0)'
-    var foreground = tinycolor.mostReadable(background, [ color1, color2 ]) // Defined Stylus variables are available for your Javascript to access.
+    var foreground = tinycolor.mostReadable(background, [ color1, color2 ]) // Stylus variables are available to Javascript.
     return `
         // This returns SASS code & comments to be written inline.
         body 
@@ -27,9 +27,10 @@ ${
     `
 }
 
+// This is Stylus again:
 body
-    background: background // You can use Stylus variables.
-    color: ${foreground} // You can use Javascript variables.
+    background: background // You can reference Stylus variables.
+    color: ${foreground} // You can reference Javascript variables too!
 ```
 
 ### .styl output
