@@ -3,10 +3,15 @@
 
 This is currently vaporware... Feel free to pitch in thoughts :)
 
-## .jcss input
+* .jstyl for Javascript in Stylus
+* .jsass for Javascript in SASS
+* .jscss for Javascript in SCSS
+* .jcss for Javascript in CSS
+
+## .jstyl example
 
 ```js
-// This is Stylus; it's the default context of .jcss (or use .jass for SASS/SCSS support):
+// This is Stylus; it's the default context of .jstyl (or use .jass for SASS, or .jcss for SCSS):
 background = black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
