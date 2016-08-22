@@ -1,7 +1,7 @@
 # JCSS
 #### Javascript in harmony with Stylus/SASS/SCSS/CSS
 
-This is currently vaporware... Feel free to pitch in thoughts :)
+*This is currently vaporware... Feel free to pitch in thoughts :)*
 
 * .jstyl for Javascript in Stylus
 * .jsass for Javascript in SASS
