@@ -7,19 +7,23 @@
 
 ```js
 // This is SASS; this is the default context:
-$bgSelected: '#ff0000'
+$background: black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
 ${
 	import 'tinycolor' // you can import libraries using ES6
-    var bg = `${'r'}${'e'}${'d'}` // just being silly with template strings
-    var fg = 'blue'
+	var color1 = `${'r'}${'e'}${'d'}` // just being silly with template strings
+	var color2 = 'blue'
+	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // SASS variables are available in JS
+	return ` // you can return SASS code which gets written inline
+		body {
+			border: 10px solid ${foreground};
+		}
+	`
 }
 
 // JS and SASS combined:
-grid-item
-    background: ${tinycolor.mostReadable('#000', [ bg, fg ])}
-
-    &.selected 
-        background: $bgSelected
+body
+	background: $background // refer to a SASS variable
+	color: ${foreground} // refer to Javascript variable
 ```
