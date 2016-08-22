@@ -34,7 +34,7 @@ body
 
 ### .styl output
 ```js
-background: black
+background = black
 
 body 
 	border: 7px solid red;
