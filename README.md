@@ -10,7 +10,7 @@ This is currently vaporware... Feel free to pitch in thoughts :)
 $background: black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
-${ // An extra newline enters functional Javascript mode, otherwise the value is treated as a variable.
+${ // A newline after dollar-bracket enters the multiline Javascript context:
 	import 'tinycolor' // You can import libraries using ES6.
 	var color1 = `${'r'}${'e'}${'d'}` // You can use template strings.
 	var color2 = 'hsla(180, 100%, 42%, 1.0)'
