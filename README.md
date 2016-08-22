@@ -15,7 +15,7 @@
 background = black
 
 // This is Javascript; dollar-bracket enters the Javascript context at any time:
-${ // A newline after dollar-bracket enters the multiline Javascript context:
+${
     import 'tinycolor' // You can perform ES6 imports.
     var color1 = `${'r'}${'e'}${'d'}` // You can use template strings or any other ES6 feature.
     var color2 = 'hsla(180, 100%, 42%, 1.0)'
