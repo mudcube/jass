@@ -16,15 +16,25 @@ ${ // An extra newline enters functional Javascript mode, otherwise the value is
 	var color2 = 'hsla(180, 100%, 42%, 1.0)'
 	var foreground = tinycolor.mostReadable($background, [ color1, color2 ]) // You can use defined SASS variables in your Javascript.
 	return ` // This returns SASS code & comments to be written inline.
-		body {
+		body 
 			border: 10px solid ${foreground};
-		}
 	`
 }
 
 body
 	background: $background // This is a SASS variable.
 	color: ${foreground} // This is a Javascript variable.
+```
+
+### .sass output
+```js
+$background: black
+
+body {
+	border: 10px solid red;
+	background: $background;
+	color: red;
+}
 ```
 
 ### .css output
