@@ -1,5 +1,5 @@
 # JASS
-#### Javascript in harmony with SASS/SCSS
+#### Javascript in harmony with SASS/SCSS/CSS
 
 (This is a concept, just tinkering with the idea...)
 
