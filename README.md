@@ -8,7 +8,9 @@
 * .jscss for Javascript in SCSS
 * .jcss for Javascript in CSS
 
-## .jstyl example
+--------------------------------------------------
+
+## .jstyl example #1
 
 ```js
 // This is Stylus; it's the default context in a .jstyl:
@@ -53,7 +55,9 @@ body {
 }
 ```
 
-## .jstyl using JSON
+--------------------------------------------------
+
+## .jstyl example #2
 
 ```js
 ${
