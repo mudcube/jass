@@ -21,7 +21,7 @@ ${
     var color2 = 'hsla(180, 100%, 42%, 1.0)'
     var foreground = tinycolor.mostReadable(background, [ color1, color2 ]) // Stylus variables are available to Javascript.
     return `
-        // Optionally you can return Stylus code & comments to be written inline.
+        // You can return Stylus which is written inline.
         body
             border: 7px solid foreground
     `
