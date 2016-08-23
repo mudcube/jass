@@ -36,11 +36,12 @@ body
 ### .styl output
 ```js
 background = black
+foreground = red
 
 body 
 	border: 7px solid red
 	background: background
-	color: red
+	color: foreground
 ```
 
 ### .css output
