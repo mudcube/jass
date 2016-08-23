@@ -23,7 +23,7 @@ ${
     return `
         // Optionally you can return Stylus code & comments to be written inline.
         body
-            border: 7px solid ${foreground}
+            border: 7px solid foreground
     `
 }
 
@@ -39,7 +39,7 @@ background = black
 foreground = red
 
 body 
-	border: 7px solid red
+	border: 7px solid foreground
 	background: background
 	color: foreground
 ```
