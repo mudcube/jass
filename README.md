@@ -22,8 +22,8 @@ ${
     var foreground = tinycolor.mostReadable(background, [ color1, color2 ]) // Stylus variables are available to Javascript.
     return `
         // This returns Stylus code & comments that are written inline.
-        body 
-            border: 7px solid ${foreground};
+        body
+            border: 7px solid ${foreground}
     `
 }
 
@@ -38,9 +38,9 @@ body
 background = black
 
 body 
-	border: 7px solid red;
-	background: background;
-	color: red;
+	border: 7px solid red
+	background: background
+	color: red
 ```
 
 ### .css output
