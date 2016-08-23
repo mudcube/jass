@@ -30,7 +30,7 @@ ${
 // This is Stylus again:
 body
     background: background // You can reference Stylus variables.
-    color: ${foreground} // You can reference Javascript variables too!
+    color: foreground // Javascript variables can be accessed in the same way.
 ```
 
 ### .styl output
