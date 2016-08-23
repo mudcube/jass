@@ -52,3 +52,15 @@ body {
 	color: red;
 }
 ```
+
+## .jstyl using JSON
+
+```js
+${
+	prefs = JSON.parse(require('fs').readFileSync('prefs.json', 'utf8'))
+}
+
+body
+    background: prefs.background
+    color: prefs.color
+```
